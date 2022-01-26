@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    background-color: lightseagreen;
+}
+
+.Controll {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        "Header Header Header Header Header"
+        "left-sidevar content content  content right-sidevar "
+        " footer footer footer footer footer";
+}
+
+.Header {
+    background-color: lightseagreen;
+    grid-area: Header;
+    height: 65px;
+}
+.logo h3 {
+    margin-left: 2%;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 15px;
+}
+.Header span {
+    color: black;
+}
+
+/* Header part end */
+
+.left-sidevar {
+    background-color: lightseagreen;
+    grid-area: left-sidevar;
+}
+.left-sidevar .Menu {
+    margin-top: 20px;
+    margin-left: -10%;
+}
+.left-sidevar ul li {
+    color: white;
+    margin-top: 10px;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.left-sidevar ul li a {
+    text-decoration: none;
+    color: white;
+}
+/* Left-sidvar part end */
+
+.content {
+    background-color: lightseagreen;
+    grid-area: content;
+}
+.contentPost {
+    margin-top: 20px;
+    background-color: lightseagreen;
+    color: black;
+    border: 1px solid white;
+}
+.contentPost .tweetbox {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.tweetbox textarea {
+    color: white;
+    background-color: lightseagreen;
+    width: 100%;
+    height: 120px;
+    border: none;
+    margin-top: 10px;
+}
+
+.tweetbox ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+.tweetbox hr {
+    background-color: white;
+    height: 1px;
+    border-width: 0;
+    margin: 0;
+}
+.tweetbox form {
+    margin-bottom: 0;
+}
+.tweetbox .textariea-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightseagreen;
+    color: white;
+}
+
+.contentPost .textariea-footer a img {
+    color: white;
+    margin: 5px;
+    border-radius: 50%;
+}
+.contentPost .textariea-footer button {
+    margin: 19px 0 19px 0;
+    border-radius: 0 20% 0 20%;
+}
+
+/* profile content 1 */
+.content header .banar img {
+    width: 100%;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.content .banar_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+    background-color: lightseagreen;
+    color: white;
+}
+.content .banar_footer h3 {
+    font-weight: 600;
+    margin: 0;
+}
+.content .banar_footer h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+.content .banar_footer img {
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-top: -100px;
+}
+.content .banar_footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.content .banar_footer button {
+    border-radius: 20px;
+    margin: 2px;
+}
+.content .tag small {
+    margin: 0;
+    color: white;
+}
+
+/* coontent second part*/
+
+.content2 {
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.uploadpost {
+    margin: 2%;
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+}
+
+.uploadpost img {
+    color: white;
+    margin: 5px;
+    border-radius: 50%;
+}
+.uploadbody {
+    margin-top: 1%;
+    margin-left: 2%;
+}
+.uploadbody a {
+    text-decoration: none;
+}
+.uploadbody h5 {
+    color: greenyellow;
+}
+.uploadbody p {
+    color: white;
+}
+
+/* Content part end */
+
+.right-sidevar {
+    background-color: lightseagreen;
+    grid-area: right-sidevar;
+}
+.right-sidevar .Friends {
+    margin-top: 20px;
+}
+.right-sidevar ul li {
+    color: white;
+    margin-top: 20px;
+    list-style-type: none;
+}
+.right-sidevar ul li {
+    margin-left: -10%;
+}
+.right-sidevar ul li a {
+    text-decoration: none;
+    color: white;
+}
+.right-sidevar ul li img {
+    border-radius: 50%;
+}
+
+/* Right-sidvar part end */
+
+.footer {
+    background-color: lightseagreen;
+    grid-area: footer;
+    color: white;
+}
+
+/* Register */
+/* controll relative */
+.Controll .register_css {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+/* End register */
+
+/* Login */
+/* controll relative */
+.Controll .login_css {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+/* End login */
+
+/* Explore-page */
+.Explore-page {
+    display: grid;
+    grid-template-areas: "img img img img";
+    color: white;
+}
+.Explore-page a {
+    color: white;
+    text-decoration: none;
+}
+.Explore-page img {
+    margin: 3px;
+    padding: 3px;
+}
+/* Explore-page end */
+
+/*--------------------------- like thumb css--------------------- */
+.uploadpost .like {
+    display: flex;
+    font-size: 16px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.uploadbody .like svg {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+/* .uploadbody .like svg path {
+    color: #6f7e85;
+    fill: blue;
+} */
+
+/* ----------------------End like thumb-------------- */
+
+/*--------------------------- Dislike thumb css--------------------- */
+.uploadpost .dislike {
+    font-size: 16px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.uploadbody .dislike svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+/* .uploadbody .dislike svg path {
+    color: #6f7e85;
+    fill: blue;
+} */
+
+/* ----------------------End dislike thumb-------------- */
